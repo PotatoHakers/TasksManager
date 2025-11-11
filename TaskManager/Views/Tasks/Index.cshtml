@@ -25,3 +25,12 @@
         }
     </tbody>
 </table>
+<form asp-action="Index" method="get">
+    <input type="text" name="search" value="@ViewBag.Search" placeholder="Поиск..." />
+    <label>
+        <input type="checkbox" name="showDone" value="true" @(ViewBag.ShowDone == true ? "checked" : "") />
+        Только выполненные
+    </label>
+    <button type="submit">Фильтр</button>
+    <a asp-action="Index">Сбросить</a>
+</form>

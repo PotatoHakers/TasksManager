@@ -15,17 +15,33 @@ namespace TaskManager.Controllers
             _taskService = taskService;
         }
         //Read
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? search, bool? showDone)
         {
             var tasks = await _taskService.GetAllTasksAsync(); // получаем данные из БД
+
+            if (!string.IsNullOrWhiteSpace(search))
+                tasks=tasks.Where(t => t.Title.Contains(search, StringComparison.OrdinalIgnoreCase)).ToList();
+
+            if (showDone.HasValue)
+                tasks = tasks.Where(t => t.IsDone == showDone.Value).ToList();
+
+            ViewBag.Search = search;
+            ViewBag.ShowDone = showDone;
+
             return View(tasks);
         }
         //Create
         [HttpGet]
-        public IActionResult Create() => View();
-        public async Task <IActionResult> Create (TaskItem task)
+        public IActionResult Create()
         {
-            if (ModelState.IsValid) { return View(task); }
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(TaskItem task)
+        {
+            if (ModelState.IsValid)
+            return View(task);
 
             await _taskService.AddAsync(task);
             return RedirectToAction(nameof(Index));
