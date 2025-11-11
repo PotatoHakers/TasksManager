@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\mix123\\source\\repos\\TaskManager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\views\\tasks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\views\\tasks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\views\\tasks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\views\\tasks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\views\\tasks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -21,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\views\\tasks\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\views\\tasks\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\views\\tasks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\views\\tasks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\views\\tasks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\views\\tasks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE30B322-B338-4159-94A1-05C8BAC7ED25}|TaskManager\\TaskManager.csproj|c:\\users\\mix123\\source\\repos\\taskmanager\\taskmanager\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,61 +74,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TaskService.cs",
-              "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Services\\TaskService.cs",
-              "RelativeDocumentMoniker": "TaskManager\\Services\\TaskService.cs",
-              "ToolTip": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Services\\TaskService.cs",
-              "RelativeToolTip": "TaskManager\\Services\\TaskService.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAwwDAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T12:32:34.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Views\\Tasks\\Edit.cshtml",
               "RelativeDocumentMoniker": "TaskManager\\Views\\Tasks\\Edit.cshtml",
               "ToolTip": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Views\\Tasks\\Edit.cshtml",
               "RelativeToolTip": "TaskManager\\Views\\Tasks\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-11T12:19:24.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Views\\Tasks\\Create.cshtml",
-              "RelativeDocumentMoniker": "TaskManager\\Views\\Tasks\\Create.cshtml",
-              "ToolTip": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Views\\Tasks\\Create.cshtml",
-              "RelativeToolTip": "TaskManager\\Views\\Tasks\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-11T12:18:58.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Views\\Tasks\\Index.cshtml",
-              "RelativeDocumentMoniker": "TaskManager\\Views\\Tasks\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Views\\Tasks\\Index.cshtml",
-              "RelativeToolTip": "TaskManager\\Views\\Tasks\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T12:01:20.495Z",
+              "WhenOpened": "2025-11-11T12:19:24.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Program.cs",
               "RelativeDocumentMoniker": "TaskManager\\Program.cs",
@@ -141,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\appsettings.json",
               "RelativeDocumentMoniker": "TaskManager\\appsettings.json",
@@ -153,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "TasksController.cs",
               "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Controllers\\TasksController.cs",
               "RelativeDocumentMoniker": "TaskManager\\Controllers\\TasksController.cs",
@@ -161,12 +124,62 @@
               "RelativeToolTip": "TaskManager\\Controllers\\TasksController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T12:12:54.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T12:12:54.327Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Models\\TaskItem.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Models\\TaskItem.cs",
+              "ToolTip": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Models\\TaskItem.cs",
+              "RelativeToolTip": "TaskManager\\Models\\TaskItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T11:54:33.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaskService.cs",
+              "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Services\\TaskService.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Services\\TaskService.cs",
+              "ToolTip": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Services\\TaskService.cs",
+              "RelativeToolTip": "TaskManager\\Services\\TaskService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T12:32:34.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Views\\Tasks\\Create.cshtml",
+              "RelativeDocumentMoniker": "TaskManager\\Views\\Tasks\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Views\\Tasks\\Create.cshtml",
+              "RelativeToolTip": "TaskManager\\Views\\Tasks\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T12:18:58.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Views\\Tasks\\Index.cshtml",
+              "RelativeDocumentMoniker": "TaskManager\\Views\\Tasks\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Views\\Tasks\\Index.cshtml",
+              "RelativeToolTip": "TaskManager\\Views\\Tasks\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T12:01:20.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Views\\Tasks\\Delete.cshtml",
               "RelativeDocumentMoniker": "TaskManager\\Views\\Tasks\\Delete.cshtml",
@@ -178,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "TaskManager\\Data\\AppDbContext.cs",
@@ -190,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "TaskManager\\Controllers\\HomeController.cs",
@@ -235,18 +248,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-10T12:07:01.336Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TaskItem.cs",
-              "DocumentMoniker": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Models\\TaskItem.cs",
-              "RelativeDocumentMoniker": "TaskManager\\Models\\TaskItem.cs",
-              "ToolTip": "C:\\Users\\mix123\\source\\repos\\TaskManager\\TaskManager\\Models\\TaskItem.cs",
-              "RelativeToolTip": "TaskManager\\Models\\TaskItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T11:54:33.015Z"
             },
             {
               "$type": "Document",

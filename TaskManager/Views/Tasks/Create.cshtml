@@ -6,6 +6,7 @@
     <div>
         <label>Название</label><br />
         <input asp-for="Title" />
+        <span asp-validation-for="Title" style="color:red"></span>
     </div>
     <div>
         <label>Выполнена?</label>
@@ -15,3 +16,7 @@
 </form>
 
 <a asp-action="Index">Вернуться к списку</a>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

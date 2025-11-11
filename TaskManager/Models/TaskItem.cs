@@ -1,9 +1,14 @@
-﻿namespace TaskManager.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TaskManager.Models
 {
     public class TaskItem
     {
         public int Id { get; set; }
-        public string Title { get; set; }
+
+        [Required(ErrorMessage = "Введите название задачи")]
+        [StringLength(100, ErrorMessage ="Название не должно превышать 100 символов")]
+        public string Title { get; set; } = string.Empty;
         public bool IsDone { get; set; }
     }
 }

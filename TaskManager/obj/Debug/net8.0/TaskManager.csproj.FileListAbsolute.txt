@@ -166,3 +166,4 @@ C:\Users\mix123\source\repos\TaskManager\TaskManager\bin\Debug\net8.0\runtimes\b
 C:\Users\mix123\source\repos\TaskManager\TaskManager\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\mix123\source\repos\TaskManager\TaskManager\obj\Debug\net8.0\TaskManager.csproj.AssemblyReference.cache
 C:\Users\mix123\source\repos\TaskManager\TaskManager\obj\Debug\net8.0\TaskMana.F3FB485A.Up2Date
+C:\Users\mix123\source\repos\TaskManager\TaskManager\obj\Debug\net8.0\TaskManager.sourcelink.json
