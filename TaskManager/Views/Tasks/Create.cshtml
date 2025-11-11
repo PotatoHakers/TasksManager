@@ -1,0 +1,17 @@
+﻿@model TaskManager.Models.TaskItem
+
+<h2>Добавить задачу</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Название</label><br />
+        <input asp-for="Title" />
+    </div>
+    <div>
+        <label>Выполнена?</label>
+        <input asp-for="IsDone" type="checkbox" />
+    </div>
+    <button type="submit">Добавить</button>
+</form>
+
+<a asp-action="Index">Вернуться к списку</a>

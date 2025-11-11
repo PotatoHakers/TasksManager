@@ -1,0 +1,27 @@
+﻿@model IEnumerable<TaskManager.Models.TaskItem>
+
+<h2>Список задач</h2>
+
+<a asp-action="Create">+ Добавить задачу</a>
+<table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Статус</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var task in Model)
+        {
+            <tr>
+                <td>@task.Title</td>
+                <td>@(task.IsDone ? "✅ Выполнено" : "❌ Не выполнено")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@task.Id">Изменить</a> |
+                    <a asp-action="Delete" asp-route-id="@task.Id">Удалить</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
