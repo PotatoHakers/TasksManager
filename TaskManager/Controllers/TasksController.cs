@@ -20,7 +20,7 @@ namespace TaskManager.Controllers
             var tasks = await _taskService.GetAllTasksAsync(); // получаем данные из БД
 
             if (!string.IsNullOrWhiteSpace(search))
-                tasks=tasks.Where(t => t.Title.Contains(search, StringComparison.OrdinalIgnoreCase)).ToList();
+                tasks = tasks.Where(t => t.Title.Contains(search, StringComparison.OrdinalIgnoreCase)).ToList();
 
             if (showDone.HasValue)
                 tasks = tasks.Where(t => t.IsDone == showDone.Value).ToList();
@@ -41,10 +41,11 @@ namespace TaskManager.Controllers
         public async Task<IActionResult> Create(TaskItem task)
         {
             if (ModelState.IsValid)
+            {
+                await _taskService.AddAsync(task);
+                return RedirectToAction(nameof(Index));
+            }
             return View(task);
-
-            await _taskService.AddAsync(task);
-            return RedirectToAction(nameof(Index));
         }
 
         //Edit
