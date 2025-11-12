@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskManager.Data;
 using TaskManager.Models;
@@ -7,27 +9,23 @@ using TaskManager.Services;
 
 namespace TaskManager.Controllers
 {
+    [Authorize]
     public class TasksController : Controller
     {
         private readonly TaskService _taskService;
-        public TasksController(TaskService taskService)
+        private readonly UserManager<IdentityUser> _userManager;
+        public TasksController(TaskService taskService, UserManager<IdentityUser> userManager)
         {
             _taskService = taskService;
+            _userManager = userManager;
         }
         //Read
-        public async Task<IActionResult> Index(string? search, bool? showDone)
+        public async Task<IActionResult> Index()
         {
-            var tasks = await _taskService.GetAllTasksAsync(); // получаем данные из БД
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge(); // если не вошёл, редирект на login
 
-            if (!string.IsNullOrWhiteSpace(search))
-                tasks = tasks.Where(t => t.Title.Contains(search, StringComparison.OrdinalIgnoreCase)).ToList();
-
-            if (showDone.HasValue)
-                tasks = tasks.Where(t => t.IsDone == showDone.Value).ToList();
-
-            ViewBag.Search = search;
-            ViewBag.ShowDone = showDone;
-
+            var tasks = await _taskService.GetUserTasksAsync(user.Id);
             return View(tasks);
         }
         //Create
@@ -40,12 +38,14 @@ namespace TaskManager.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(TaskItem task)
         {
-            if (ModelState.IsValid)
-            {
-                await _taskService.AddAsync(task);
-                return RedirectToAction(nameof(Index));
-            }
-            return View(task);
+            if (!ModelState.IsValid) return View(task);
+
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge();
+
+            task.UserId = user.Id;
+            await _taskService.AddAsync(task);
+            return RedirectToAction(nameof(Index));
         }
 
         //Edit

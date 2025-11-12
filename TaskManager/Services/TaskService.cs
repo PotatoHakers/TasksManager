@@ -45,5 +45,11 @@ namespace TaskManager.Services
                 await _context.SaveChangesAsync();
             }
         }
+        public async Task<List<TaskItem>> GetUserTasksAsync(string userId)
+        {
+            return await _context.Tasks
+                .Where(t=> t.UserId == userId)
+                .ToListAsync();
+        }
     }
 }
