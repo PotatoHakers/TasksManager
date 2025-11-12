@@ -1,0 +1,58 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.log
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# ASP.NET Core
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+
+# Entity Framework Core
+Migrations/
+*.db
+*.sqlite
+*.mdf
+*.ldf
+
+# Node-related (if using frontend)
+node_modules/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+
+# Publish output
+publish/
+dist/
+wwwroot/lib/
+
+# Mac & Windows
+.DS_Store
+Thumbs.db
