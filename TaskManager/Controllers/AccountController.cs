@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using TaskManager.Models;
 using TaskManager.Data;
+using TaskManager.Models;
 
 public class AccountController : Controller
 {
@@ -10,7 +9,9 @@ public class AccountController : Controller
     private readonly SignInManager<IdentityUser> _signInManager;
     private readonly AppDbContext _context;
 
-    public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, AppDbContext context)
+    public AccountController(UserManager<IdentityUser> userManager,
+                             SignInManager<IdentityUser> signInManager,
+                             AppDbContext context)
     {
         _userManager = userManager;
         _signInManager = signInManager;
@@ -46,29 +47,30 @@ public class AccountController : Controller
     [HttpPost]
     public async Task<IActionResult> Login(LoginViewModel model)
     {
-
-        var log = new LoginLog
-        {
-            UserEmail = model.Email,
-            LoginTime = DateTime.Now,
-            IpAddress = HttpContext.Connection.RemoteIpAddress?.ToString()
-        };
-
-        _context.LoginLogs.Add(log);
-        await _context.SaveChangesAsync();
-
         if (!ModelState.IsValid) return View(model);
 
         var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
-        if (result.Succeeded) return RedirectToAction("Index", "Tasks");
+        if (result.Succeeded)
+        {
+            // Лог входа
+            var log = new LoginLog
+            {
+                UserEmail = model.Email,
+                LoginTime = DateTime.Now,
+                IpAddress = HttpContext.Connection.RemoteIpAddress?.ToString()
+            };
+
+            _context.LoginLogs.Add(log);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "Tasks");
+        }
 
         ModelState.AddModelError("", "Неверный логин или пароль");
         return View(model);
-
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Logout()
     {
         var email = User.Identity.Name;
@@ -86,6 +88,5 @@ public class AccountController : Controller
 
         await _signInManager.SignOutAsync();
         return RedirectToAction("Login");
-
     }
 }

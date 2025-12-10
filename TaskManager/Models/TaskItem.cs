@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace TaskManager.Models
 {
@@ -6,12 +7,12 @@ namespace TaskManager.Models
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Введите название задачи")]
-        [StringLength(100, ErrorMessage ="Название не должно превышать 100 символов")]
-        public string Title { get; set; } = string.Empty;
+        [Required]
+        public string Title { get; set; }
+
         public bool IsDone { get; set; }
 
-        //Привязка задачи к пользователю
-        public string? UserId { get; set; }
+        public string UserId { get; set; }
+        public IdentityUser User { get; set; }
     }
 }

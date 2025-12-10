@@ -1,4 +1,6 @@
-﻿namespace TaskManager.Models
+﻿using System;
+
+namespace TaskManager.Models
 {
     public class LoginLog
     {
@@ -8,5 +10,4 @@
         public DateTime? LogoutTime { get; set; }
         public string IpAddress { get; set; }
     }
-
 }
