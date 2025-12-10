@@ -1,16 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using TaskManager.Models;
 
 namespace TaskManager.Data
 {
-    public class AppDbContext : DbContext
-    //Чтобы содать миграцию для конкретной бд нужно использовать Add-Migration -Context {Навание бд} {Навание миграции}
+    public class AppDbContext : IdentityDbContext<IdentityUser>
     {
-        public AppDbContext() { }
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options) { }
 
-        public DbSet<TaskItem> Tasks { get; set; }  // Таблица задач
-        public DbSet<LoginLog> LoginLogs { get; set; } // Логи залогиненных аккаунтов
-
+        public DbSet<TaskItem> Tasks { get; set; }
+        public DbSet<LoginLog> LoginLogs { get; set; }
     }
 }
