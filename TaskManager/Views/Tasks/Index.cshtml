@@ -1,36 +1,51 @@
 ﻿@model IEnumerable<TaskManager.Models.TaskItem>
 
-<h2>Список задач</h2>
+<!-- Страница задач -->
+<div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h3 class="card-title">Мои задачи</h3>
+        <a class="btn btn-success btn-sm" href="/Tasks/Create">
+            <i class="fas fa-plus"></i> Создать задачу
+        </a>
+    </div>
 
-<a asp-action="Create">+ Добавить задачу</a>
-<table border="1" cellpadding="5" cellspacing="0">
-    <thead>
-        <tr>
-            <th>Название</th>
-            <th>Статус</th>
-            <th>Действия</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var task in Model)
-        {
-            <tr>
-                <td>@task.Title</td>
-                <td>@(task.IsDone ? "✅ Выполнено" : "❌ Не выполнено")</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@task.Id">Изменить</a> |
-                    <a asp-action="Delete" asp-route-id="@task.Id">Удалить</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-<form asp-action="Index" method="get">
-    <input type="text" name="search" value="@ViewBag.Search" placeholder="Поиск..." />
-    <label>
-        <input type="checkbox" name="showDone" value="true" @(ViewBag.ShowDone == true ? "checked" : "") />
-        Только выполненные
-    </label>
-    <button type="submit">Фильтр</button>
-    <a asp-action="Index">Сбросить</a>
-</form>
+    <div class="card-body table-responsive p-0">
+        <table class="table table-hover text-nowrap">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Название</th>
+                    <th>Статус</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var task in Model)
+                {
+                    <tr>
+                        <td>@task.Id</td>
+                        <td>@task.Title</td>
+                        <td>
+                            @if (task.IsDone)
+                            {
+                                <span class="badge bg-success">Выполнено</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-warning text-dark">Активно</span>
+                            }
+                        </td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" href="/Tasks/Edit/@task.Id">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="/Tasks/Delete/@task.Id">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

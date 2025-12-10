@@ -4,24 +4,26 @@ using TaskManager.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1?? Подключаем БД
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// 2?? Регистрация Identity с ролями
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Identity пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
 })
 .AddRoles<IdentityRole>()
-.AddEntityFrameworkStores<AppDbContext>();
+.AddEntityFrameworkStores<AppDbContext>()
+.AddDefaultUI();
 
-// 3?? Контроллеры с Views
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ Views
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-// 4?? Создаём роли при старте
+//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
@@ -34,13 +36,15 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-// 5?? Middleware
+//Middleware
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-// 6?? Маршрутизация
+app.MapRazorPages();
+
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Tasks}/{action=Index}/{id?}");
